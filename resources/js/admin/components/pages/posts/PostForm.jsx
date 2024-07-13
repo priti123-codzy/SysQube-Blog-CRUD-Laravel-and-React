@@ -129,7 +129,7 @@ class Form extends React.Component
                             {
                                 // show image for edit
                                 this.props.post.image_url?(
-                                    <img src={this.props.post.image_url} width="100" height="80" />
+                                    <img src={this.props.post.image_url} width="100" height="80" alt="Post image" />
                                 ): null
                             }
 

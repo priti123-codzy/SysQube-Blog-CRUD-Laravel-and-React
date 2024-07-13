@@ -108,7 +108,7 @@ class Login extends Component
             <div className="container">
                 <div className="login-box">
                     <div className="login-logo">
-                        <b>Blog</b>RL
+                        <b>Sys</b>Qube
                     </div>
                     <div className="login-box-body">
                         <p className="login-box-msg">Sign in to start your session</p>

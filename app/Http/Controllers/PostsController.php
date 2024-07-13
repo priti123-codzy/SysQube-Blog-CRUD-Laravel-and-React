@@ -8,9 +8,10 @@ use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
+// use Illuminate\Support\Facades\File;
 use Exception;
-// use Symfony\Component\HttpFoundation\File\File;
-use File;
+use Symfony\Component\HttpFoundation\File\File;
 
 class PostsController extends Controller
 {
