@@ -57,17 +57,21 @@ Backend Setup
 
 #Set up the database connection in the .env file. For example:
 ->
+
 DB_CONNECTION=mysql
 
 DB_HOST=127.0.0.1
 
 DB_PORT=3306
-DB_DATABASE=your_database_name
-DB_USERNAME=your_database_username
-DB_PASSWORD=your_database_password
-Run the database migrations:
 
-#php artisan migrate
+DB_DATABASE=your_database_name
+
+DB_USERNAME=your_database_username
+
+DB_PASSWORD=your_database_password
+
+#Run the database migrations:
+->php artisan migrate
 
 #Seed the database with test data:
 ->php artisan db:seed
