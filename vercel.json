@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "api/index.php"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/index.php"
+    }
+  ],
+  
+  "env": {
+    "APP_ENV": "local",
+    "APP_KEY": "base64:Y4pDjqaWXi64cEMh5M3N3ovnBPNrzqY1kX++nfRIJhI=",
+    "APP_DEBUG": "false",
+    "APP_URL": "https://sys-qube-blog-crud-laravel-and-react.vercel.app",
+    "DB_CONNECTION": "mysql",
+    "DB_HOST": "your-db-host",
+    "DB_PORT": "3306",
+    "DB_DATABASE": "laravel_react_blog",
+    "DB_USERNAME": "root",
+    "DB_PASSWORD": ""
+  }
+}
