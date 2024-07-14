@@ -91,3 +91,8 @@ Open another terminal and start the React development server:
 
 ->npm run watch
 **Open your browser and navigate to http://localhost:8000 to see the application.**
+
+
+
+**Visti website (website link)**
+https://sys-qube-blog-crud-laravel-and-react.vercel.app/
