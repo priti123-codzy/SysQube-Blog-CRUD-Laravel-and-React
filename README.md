@@ -27,6 +27,7 @@ SysQube Blog is a fictional blog website that consists of articles. This project
 - API Integration for CRUD Operations and Fetching External Data
 - Admin Features for Managing Blog Posts
 - Unit and Feature Testing
+- Api
 
 ## Installation
 
