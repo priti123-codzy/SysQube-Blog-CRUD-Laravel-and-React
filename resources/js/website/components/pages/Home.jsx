@@ -2,6 +2,9 @@ import React from 'react';
 import Sidebar from '../partials/Sidebar';
 import Article from '../partials/Article';
 import Post from '../../apis/Post';
+import News from './News';
+
+
 
 class Home extends React.Component
 {
@@ -45,6 +48,7 @@ class Home extends React.Component
                         {
                             this.state.posts.map(post => <Article key={post.id} post={post} />)
                         }
+                        <News />
 
                     </div>
 

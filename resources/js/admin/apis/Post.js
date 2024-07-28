@@ -2,26 +2,26 @@ import axios from 'axios';
 
 const Post = {
     list: (page = 1) => {
-        return axios.get('/posts?page=' + page);
+        return axios.get('/api/posts?page=' + page);
     },
     add: (payload) => {
 
         let data = Post.toFormData(payload);
 
-        return axios.post('/posts', data, {headers: {Authorization: 'Bearer ' + localStorage.getItem("user.api_token"), 'Content-Type': 'multipart/form-data'}});
+        return axios.post('/api/posts', data, {headers: {Authorization: 'Bearer ' + localStorage.getItem("user.api_token"), 'Content-Type': 'multipart/form-data'}});
     },
     showOne: (id) => {
-        return axios.get('/posts/' + id);
+        return axios.get('/api/posts/' + id);
     },
     edit: (payload, id) => {
         let data = Post.toFormData(payload);
         // PUT method is not working, so use POST and attach _method=PUT
         data.append('_method', 'PUT');
 
-        return axios.post('/posts/' + id, data, {headers: {Authorization: 'Bearer ' + localStorage.getItem("user.api_token"), 'Content-Type': 'multipart/form-data'}});
+        return axios.post('/api/posts/' + id, data, {headers: {Authorization: 'Bearer ' + localStorage.getItem("user.api_token"), 'Content-Type': 'multipart/form-data'}});
     },
     remove: (id) => {
-        return axios.delete('/posts/' + id, {headers: {Authorization: 'Bearer ' + localStorage.getItem("user.api_token")}});
+        return axios.delete('/api/posts/' + id, {headers: {Authorization: 'Bearer ' + localStorage.getItem("user.api_token")}});
     },
     // arrow function, return formData obj
     toFormData: (payload) => {

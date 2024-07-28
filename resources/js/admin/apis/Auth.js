@@ -2,7 +2,7 @@ import axios from "axios";
 
 const Auth = {
   login: (data, successCb, failCb) => {
-      axios.post('/login', data).then(response => {
+      axios.post('api/login', data).then(response => {
 
           successCb(response);
 
@@ -12,7 +12,7 @@ const Auth = {
       });
   },
   logout: (successCb, failCb) => {
-      axios.get('/logout', {headers: {Authorization: 'Bearer ' + localStorage.getItem("user.api_token")}})
+      axios.get('api/logout', {headers: {Authorization: 'Bearer ' + localStorage.getItem("user.api_token")}})
           .then(response => {
               localStorage.clear();
 
